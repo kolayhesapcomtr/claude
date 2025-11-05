@@ -1476,14 +1476,18 @@ section {
 
 .gallery-icon {
     font-size: 4rem;
-    opacity: 0.3;
+    opacity: 1;
+    position: relative;
+    z-index: 2;
 }
 
 .gallery-placeholder p {
     margin-top: 1rem;
     font-weight: 600;
     color: var(--text-color);
-    opacity: 0.5;
+    opacity: 1;
+    position: relative;
+    z-index: 2;
 }
 
 .gallery-categories {
