@@ -123,8 +123,7 @@ function initNavbarScroll() {
 
 function initContactForm() {
     // EmailJS Initialization
-    // TODO: Aşağıdaki YOUR_PUBLIC_KEY değerini EmailJS'den aldığınız Public Key ile değiştirin
-    emailjs.init("YOUR_PUBLIC_KEY");
+    emailjs.init("mIkaTy0mIaJ3WRNHT");
 
     const contactForm = document.getElementById('contactForm');
 
@@ -169,8 +168,7 @@ function initContactForm() {
                 message: message
             };
 
-            // TODO: YOUR_SERVICE_ID ve YOUR_TEMPLATE_ID değerlerini EmailJS'den aldığınız değerlerle değiştirin
-            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+            emailjs.send('service_kolayhesap', 'bulut_iletisim', templateParams)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
 
