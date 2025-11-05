@@ -834,6 +834,18 @@ section {
     gap: 1.5rem;
 }
 
+.additional-services-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.additional-services-section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--dark-color);
+    margin-bottom: 3rem;
+}
+
 .additional-services-four-col {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
