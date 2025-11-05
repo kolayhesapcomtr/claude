@@ -1278,14 +1278,18 @@ section {
 
 .story-image-placeholder .placeholder-icon {
     font-size: 8rem;
-    opacity: 0.3;
+    opacity: 1;
+    position: relative;
+    z-index: 2;
 }
 
 .story-image-placeholder p {
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 1rem;
-    opacity: 0.7;
+    opacity: 1;
+    position: relative;
+    z-index: 2;
 }
 
 .mission-vision {
