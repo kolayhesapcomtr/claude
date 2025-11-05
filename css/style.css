@@ -728,8 +728,14 @@ section {
 
 .step {
     display: flex;
-    gap: 1.5rem;
-    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.step-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .step-number {
@@ -748,7 +754,12 @@ section {
 
 .step h4 {
     color: var(--dark-color);
-    margin-bottom: 0.5rem;
+    margin: 0;
+}
+
+.step p {
+    margin: 0;
+    padding-left: calc(50px + 1rem);
 }
 
 .storage-options {
@@ -820,6 +831,12 @@ section {
 .additional-services-two-col {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.additional-services-four-col {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
 }
 
@@ -1939,6 +1956,10 @@ section {
     .storage-options {
         grid-template-columns: 1fr;
     }
+
+    .additional-services-four-col {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 480px) {
@@ -1961,5 +1982,9 @@ section {
 
     .form-container {
         padding: 2rem 1.5rem;
+    }
+
+    .additional-services-four-col {
+        grid-template-columns: 1fr;
     }
 }
