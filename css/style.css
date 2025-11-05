@@ -861,14 +861,18 @@ section {
 
 .service-image-placeholder .placeholder-icon {
     font-size: 8rem;
-    opacity: 0.3;
+    opacity: 1;
+    position: relative;
+    z-index: 2;
 }
 
 .service-image-placeholder p {
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 1rem;
-    opacity: 0.5;
+    opacity: 1;
+    position: relative;
+    z-index: 2;
 }
 
 /* ==========================================
