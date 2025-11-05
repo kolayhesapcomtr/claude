@@ -118,10 +118,14 @@ function initNavbarScroll() {
 }
 
 // ==========================================
-// CONTACT FORM
+// CONTACT FORM - EmailJS Integration
 // ==========================================
 
 function initContactForm() {
+    // EmailJS Initialization
+    // TODO: Aşağıdaki YOUR_PUBLIC_KEY değerini EmailJS'den aldığınız Public Key ile değiştirin
+    emailjs.init("YOUR_PUBLIC_KEY");
+
     const contactForm = document.getElementById('contactForm');
 
     if (contactForm) {
@@ -149,11 +153,46 @@ function initContactForm() {
                 return;
             }
 
-            // Show success message
-            alert(`Teşekkürler ${name}!\n\nMesajınız alınmıştır. En kısa sürede size dönüş yapacağız.\n\nİletişim bilgileriniz:\nE-posta: ${email}\nTelefon: ${phone}`);
+            // Disable submit button and show loading state
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Gönderiliyor...';
 
-            // Reset form
-            contactForm.reset();
+            // EmailJS parameters
+            const templateParams = {
+                from_name: name,
+                from_email: email,
+                phone: phone,
+                company: company || 'Belirtilmedi',
+                subject: subject,
+                message: message
+            };
+
+            // TODO: YOUR_SERVICE_ID ve YOUR_TEMPLATE_ID değerlerini EmailJS'den aldığınız değerlerle değiştirin
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+
+                    // Show success message
+                    alert(`Teşekkürler ${name}!\n\nMesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağız.\n\nİletişim bilgileriniz:\nE-posta: ${email}\nTelefon: ${phone}`);
+
+                    // Reset form
+                    contactForm.reset();
+
+                    // Re-enable submit button
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalText;
+                }, function(error) {
+                    console.log('FAILED...', error);
+
+                    // Show error message
+                    alert('Üzgünüz, mesajınız gönderilemedi. Lütfen daha sonra tekrar deneyin veya doğrudan telefon ile iletişime geçin.\n\nHata: ' + error.text);
+
+                    // Re-enable submit button
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalText;
+                });
         });
     }
 }
