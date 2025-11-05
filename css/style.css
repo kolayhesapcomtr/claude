@@ -1714,32 +1714,16 @@ section {
     margin-bottom: 2rem;
 }
 
-.map-placeholder {
-    background: var(--light-color);
-    height: 400px;
+.map-container {
+    width: 100%;
     border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
 }
 
-.map-content {
-    text-align: center;
-}
-
-.map-icon {
-    font-size: 4rem;
+.map-container iframe {
     display: block;
-    margin-bottom: 1rem;
-}
-
-.map-content h3 {
-    color: var(--dark-color);
-    margin-bottom: 0.5rem;
-}
-
-.map-content p {
-    margin-bottom: 1.5rem;
+    width: 100%;
 }
 
 .contact-faq {
