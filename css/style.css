@@ -121,27 +121,6 @@ a {
     width: 100%;
 }
 
-.nav-actions {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.btn-call {
-    background: var(--gradient);
-    color: white;
-    padding: 0.6rem 1.5rem;
-    border-radius: 30px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: var(--shadow-sm);
-}
-
-.btn-call:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-}
-
 .hamburger {
     display: none;
     flex-direction: column;
@@ -279,7 +258,9 @@ a {
 
 .hero-text {
     max-width: 700px;
+    margin: 0 auto;
     color: white;
+    text-align: center;
     animation: fadeInUp 1s ease;
 }
 
@@ -321,6 +302,7 @@ a {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .hero-features {
@@ -328,6 +310,7 @@ a {
     gap: 2rem;
     margin-top: 3rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .feature-box {
