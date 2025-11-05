@@ -904,6 +904,21 @@ section {
     z-index: 2;
 }
 
+.process-section {
+    margin-top: 2rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow-sm);
+}
+
+.process-section h3 {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
 /* ==========================================
    PRODUCTS
    ========================================== */
