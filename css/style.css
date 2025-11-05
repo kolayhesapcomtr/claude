@@ -817,6 +817,12 @@ section {
     gap: 1rem;
 }
 
+.additional-services-two-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
 .additional-service-item {
     display: flex;
     gap: 1rem;
