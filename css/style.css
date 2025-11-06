@@ -1927,11 +1927,11 @@ section {
     }
 
     .nav-menu li {
-        margin: 0.5rem 0;
+        margin: 0.25rem 0;
     }
 
     .nav-menu a {
-        padding: 0.75rem 1.5rem;
+        padding: 0.5rem 1.5rem;
         display: block;
         border-radius: 12px;
         transition: all 0.3s ease;
@@ -1939,6 +1939,16 @@ section {
 
     .nav-menu a:hover {
         background: var(--light-color);
+    }
+
+    .nav-menu a.active {
+        background: var(--gradient);
+        color: white;
+        font-weight: 600;
+    }
+
+    .nav-menu a.active::after {
+        display: none;
     }
 
     .hero-text h1 {
