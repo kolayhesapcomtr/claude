@@ -1911,16 +1911,34 @@ section {
         top: 70px;
         flex-direction: column;
         background: white;
-        width: 100%;
+        width: calc(100% - 2rem);
+        margin: 0 1rem;
         text-align: center;
-        transition: 0.3s;
-        box-shadow: var(--shadow-md);
+        transition: 0.3s ease;
+        box-shadow: var(--shadow-lg);
         padding: 2rem 0;
         z-index: 999;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
     }
 
     .nav-menu.active {
-        left: 0;
+        left: 1rem;
+    }
+
+    .nav-menu li {
+        margin: 0.5rem 0;
+    }
+
+    .nav-menu a {
+        padding: 0.75rem 1.5rem;
+        display: block;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+    }
+
+    .nav-menu a:hover {
+        background: var(--light-color);
     }
 
     .hero-text h1 {
