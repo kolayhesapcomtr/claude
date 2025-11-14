@@ -5,6 +5,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all functions
     initMobileMenu();
+    initLanguageDropdown();
     initSmoothScroll();
     initNavbarScroll();
     initContactForm();
@@ -66,6 +67,38 @@ function initMobileMenu() {
                 spans[1].style.opacity = '1';
                 spans[2].style.transform = 'none';
             }
+        });
+    }
+}
+
+// ==========================================
+// LANGUAGE DROPDOWN
+// ==========================================
+
+function initLanguageDropdown() {
+    const langSwitcher = document.querySelector('.language-switcher');
+    const langCurrent = document.querySelector('.lang-current');
+
+    if (langSwitcher && langCurrent) {
+        // Toggle dropdown on click
+        langCurrent.addEventListener('click', function(e) {
+            e.stopPropagation();
+            langSwitcher.classList.toggle('active');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!langSwitcher.contains(e.target)) {
+                langSwitcher.classList.remove('active');
+            }
+        });
+
+        // Close dropdown when selecting an option
+        const langOptions = document.querySelectorAll('.lang-option');
+        langOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                langSwitcher.classList.remove('active');
+            });
         });
     }
 }

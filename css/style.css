@@ -85,6 +85,12 @@ a {
     font-size: 2rem;
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -137,38 +143,93 @@ a {
 }
 
 /* ==========================================
-   LANGUAGE SWITCHER
+   LANGUAGE SWITCHER DROPDOWN
    ========================================== */
 
 .language-switcher {
+    position: relative;
+}
+
+.lang-current {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-left: 2rem;
-}
-
-.lang-link {
-    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    background: var(--light-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
     font-weight: 600;
     font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+    color: var(--text-color);
+    border: 2px solid transparent;
 }
 
-.lang-link:hover {
+.lang-current:hover {
+    background: white;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.lang-flag {
+    font-size: 1.2rem;
+}
+
+.lang-arrow {
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+.language-switcher.active .lang-arrow {
+    transform: rotate(180deg);
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    min-width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.language-switcher.active .lang-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.lang-option:hover {
     background: var(--light-color);
     color: var(--primary-color);
 }
 
-.lang-link.active {
+.lang-option.active {
     background: var(--gradient);
     color: white;
 }
 
-.lang-separator {
-    color: var(--text-color);
-    opacity: 0.3;
+.lang-option .lang-flag {
+    font-size: 1.3rem;
 }
 
 /* ==========================================
@@ -1941,13 +2002,16 @@ section {
     }
 
     .language-switcher {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 0.75rem;
     }
 
-    .lang-link {
+    .lang-current {
+        padding: 0.4rem 0.8rem;
         font-size: 0.85rem;
-        padding: 0.3rem 0.6rem;
+    }
+
+    .lang-dropdown {
+        min-width: 130px;
     }
 
     .nav-menu {
