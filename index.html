@@ -1,311 +1,136 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bulut Soğuk Hava Tesisi - -18 dereceye kadar profesyonel soğutma ve depolama hizmetleri">
-    <title>Bulut Soğuk Hava Tesisi - Ana Sayfa</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="description" content="Bulut Cold Storage Facility - Professional cooling and storage solutions">
+    <title>Bulut Cold Storage Facility</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+        }
+
+        .logo {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: 2px solid white;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn:hover {
+            background: white;
+            color: #2563eb;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .loader {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .auto-redirect {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <a href="index.html">
-                    <span class="logo-icon">❄️</span>
-                    <span class="logo-text">Bulut Soğuk Hava</span>
-                </a>
-            </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="active">Ana Sayfa</a></li>
-                <li><a href="services.html">Hizmetlerimiz</a></li>
-                <li><a href="products.html">Depolanan Ürünler</a></li>
-                <li><a href="about.html">Hakkımızda</a></li>
-                <li><a href="gallery.html">Galeri</a></li>
-                <li><a href="contact.html">İletişim</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <div class="container">
+        <div class="logo">❄️</div>
+        <h1>Bulut Cold Storage</h1>
+        <p>Professional Cooling & Storage Solutions</p>
+        <p class="auto-redirect">
+            Automatically redirecting based on your language...
+            <span class="loader"></span>
+        </p>
+        <div class="buttons">
+            <a href="tr/index.html" class="btn">🇹🇷 Türkçe</a>
+            <a href="en/index.html" class="btn">🇬🇧 English</a>
         </div>
-    </nav>
+    </div>
 
-    <!-- Hero Section -->
-    <section class="hero-home">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="container">
-                <div class="hero-text">
-                    <span class="hero-badge">Modern Soğutma Teknolojisi</span>
-                    <h1>Güvenilir Soğuk Hava Deposu Hizmetleri</h1>
-                    <p class="hero-subtitle">-18°C'ye kadar profesyonel soğutma ve depolama çözümleri. Gıda ürünleriniz güvenli ellerde.</p>
-                    <div class="hero-buttons">
-                        <a href="contact.html" class="btn btn-primary">Teklif Alın</a>
-                        <a href="services.html" class="btn btn-secondary">Hizmetlerimiz</a>
-                    </div>
-                </div>
-                <div class="hero-features">
-                    <div class="feature-box">
-                        <div class="feature-icon">🌡️</div>
-                        <div class="feature-text">
-                            <span class="feature-number">-18°C</span>
-                            <span class="feature-label">Soğutma Kapasitesi</span>
-                        </div>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">⚡</div>
-                        <div class="feature-text">
-                            <span class="feature-number">7/24</span>
-                            <span class="feature-label">Kesintisiz Hizmet</span>
-                        </div>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">✓</div>
-                        <div class="feature-text">
-                            <span class="feature-number">%100</span>
-                            <span class="feature-label">Güvenilir</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span></span>
-        </div>
-    </section>
+    <script>
+        // Auto-detect browser language and redirect
+        (function() {
+            const userLang = navigator.language || navigator.userLanguage;
+            const lang = userLang.toLowerCase();
 
-    <!-- Services Preview -->
-    <section class="services-preview">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Hizmetlerimiz</span>
-                <h2>Profesyonel Soğutma Çözümleri</h2>
-                <p>Gıda sektöründe faaliyet gösteren firmalar için özel soğuk hava deposu hizmetleri</p>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon-large">🧊</div>
-                    <h3>Soğuk Hava Deposu</h3>
-                    <p>-18°C'ye kadar modern soğuk hava deposu hizmeti. Ürünleriniz için en uygun sıcaklık kontrolü.</p>
-                    <ul class="service-list">
-                        <li>24/7 Sıcaklık İzleme</li>
-                        <li>Modern Soğutma Sistemleri</li>
-                        <li>Hijyenik Ortam</li>
-                    </ul>
-                    <a href="services.html#soguk-depo" class="link-arrow">Detaylı Bilgi →</a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon-large">⚡</div>
-                    <h3>Şoklama Odası</h3>
-                    <p>Hızlı dondurma teknolojisi ile ürünlerinizin kalitesini ve tazeliğini koruyun.</p>
-                    <ul class="service-list">
-                        <li>Hızlı Dondurma</li>
-                        <li>Ürün Kalitesi Koruması</li>
-                        <li>Esnek Kapasite</li>
-                    </ul>
-                    <a href="services.html#soklama" class="link-arrow">Detaylı Bilgi →</a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon-large">📦</div>
-                    <h3>Depolama Hizmetleri</h3>
-                    <p>Et, balık, süt tozu ve dondurulmuş gıdalar için güvenli depolama alanları.</p>
-                    <ul class="service-list">
-                        <li>Esnek Süre Seçenekleri</li>
-                        <li>Güvenli Stok Takibi</li>
-                        <li>Kolay Erişim</li>
-                    </ul>
-                    <a href="services.html#depolama" class="link-arrow">Detaylı Bilgi →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section class="products-home">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Depolama</span>
-                <h2>Depoladığımız Ürünler</h2>
-                <p>Gıda ürünleriniz için özel depolama koşulları</p>
-            </div>
-
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-icon">🥩</div>
-                    <h3>Et Ürünleri</h3>
-                    <p>Kırmızı et, beyaz et ve işlenmiş et ürünleri için özel soğuk depolama.</p>
-                </div>
-                <div class="product-card">
-                    <div class="product-icon">🐟</div>
-                    <h3>Su Ürünleri</h3>
-                    <p>Taze ve dondurulmuş balık, deniz ürünleri için hijyenik muhafaza.</p>
-                </div>
-                <div class="product-card">
-                    <div class="product-icon">🥛</div>
-                    <h3>Süt Tozu</h3>
-                    <p>Süt tozu ve süt ürünleri için uygun sıcaklık ve nem kontrolü.</p>
-                </div>
-                <div class="product-card">
-                    <div class="product-icon">🍕</div>
-                    <h3>Dondurulmuş Gıdalar</h3>
-                    <p>Hazır yemek, pizza, mantı gibi dondurulmuş ürünlerin depolanması.</p>
-                </div>
-            </div>
-
-            <div class="cta-center">
-                <a href="products.html" class="btn btn-primary">Tüm Ürünleri Görün</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Us Section -->
-    <section class="why-us">
-        <div class="container">
-            <div class="why-us-content">
-                <div class="why-us-text">
-                    <span class="section-badge">Neden Biz?</span>
-                    <h2>Bulut Soğuk Hava'yı Tercih Etme Nedenleri</h2>
-                    <p>Modern teknoloji ve yılların deneyimi ile gıda ürünleriniz için en güvenilir soğuk hava deposu hizmetini sunuyoruz.</p>
-
-                    <div class="why-list">
-                        <div class="why-item">
-                            <div class="why-icon">✓</div>
-                            <div>
-                                <h4>Modern Teknoloji</h4>
-                                <p>Son teknoloji soğutma sistemleri ve otomatik sıcaklık kontrolü</p>
-                            </div>
-                        </div>
-                        <div class="why-item">
-                            <div class="why-icon">✓</div>
-                            <div>
-                                <h4>Güvenilir Hizmet</h4>
-                                <p>7/24 kesintisiz hizmet ve anlık müdahale imkanı</p>
-                            </div>
-                        </div>
-                        <div class="why-item">
-                            <div class="why-icon">✓</div>
-                            <div>
-                                <h4>Hijyen Standartları</h4>
-                                <p>Gıda güvenliği ve hijyen standartlarına tam uyum</p>
-                            </div>
-                        </div>
-                        <div class="why-item">
-                            <div class="why-icon">✓</div>
-                            <div>
-                                <h4>Esnek Çözümler</h4>
-                                <p>İhtiyacınıza özel depolama süreleri ve kapasite seçenekleri</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="about.html" class="btn btn-outline">Hakkımızda →</a>
-                </div>
-
-                <div class="why-us-stats">
-                    <div class="stat-box">
-                        <div class="stat-icon">📊</div>
-                        <div class="stat-number" data-target="500">0</div>
-                        <div class="stat-label">Mutlu Müşteri</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-icon">📦</div>
-                        <div class="stat-number" data-target="50000">0</div>
-                        <div class="stat-label">m³ Depolama</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-icon">⏱️</div>
-                        <div class="stat-number" data-target="15">0</div>
-                        <div class="stat-label">Yıl Deneyim</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-icon">✓</div>
-                        <div class="stat-number" data-target="99">0</div>
-                        <div class="stat-label">% Memnuniyet</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ürünleriniz İçin Güvenli Depolama</h2>
-                <p>Hemen bizimle iletişime geçin ve özel depolama çözümlerimiz hakkında bilgi alın</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-white">İletişime Geçin</a>
-                    <a href="tel:+905551234567" class="btn btn-outline-white">📞 Hemen Arayın</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <div class="footer-brand">
-                        <span class="logo-icon">❄️</span>
-                        <span class="logo-text">Bulut Soğuk Hava</span>
-                    </div>
-                    <p>Modern soğutma teknolojisi ile gıda ürünleriniz için güvenilir depolama çözümleri.</p>
-                    <div class="social-links">
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://wa.me/905551234567" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Hızlı Linkler</h4>
-                    <ul>
-                        <li><a href="index.html">Ana Sayfa</a></li>
-                        <li><a href="services.html">Hizmetlerimiz</a></li>
-                        <li><a href="products.html">Depolanan Ürünler</a></li>
-                        <li><a href="about.html">Hakkımızda</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Hizmetlerimiz</h4>
-                    <ul>
-                        <li><a href="services.html#soguk-depo">Soğuk Hava Deposu</a></li>
-                        <li><a href="services.html#soklama">Şoklama Odası</a></li>
-                        <li><a href="services.html#depolama">Depolama Hizmetleri</a></li>
-                        <li><a href="gallery.html">Galeri</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>İletişim</h4>
-                    <ul class="contact-info">
-                        <li>📍 Merkez Mah. Soğutma Cad. No:123<br>İstanbul, Türkiye</li>
-                        <li>📞 +90 (555) 123 45 67</li>
-                        <li>✉️ info@bulutsogukhava.com</li>
-                        <li>⏰ Pzt-Cum: 08:00 - 18:00</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2024 Bulut Soğuk Hava Tesisi İşletmesi. Tüm hakları saklıdır.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
+            // Redirect after 2 seconds
+            setTimeout(function() {
+                if (lang.startsWith('tr')) {
+                    window.location.href = 'tr/index.html';
+                } else {
+                    window.location.href = 'en/index.html';
+                }
+            }, 2000);
+        })();
+    </script>
 </body>
 </html>

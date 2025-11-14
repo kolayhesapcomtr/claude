@@ -137,6 +137,41 @@ a {
 }
 
 /* ==========================================
+   LANGUAGE SWITCHER
+   ========================================== */
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 2rem;
+}
+
+.lang-link {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.lang-link:hover {
+    background: var(--light-color);
+    color: var(--primary-color);
+}
+
+.lang-link.active {
+    background: var(--gradient);
+    color: white;
+}
+
+.lang-separator {
+    color: var(--text-color);
+    opacity: 0.3;
+}
+
+/* ==========================================
    BUTTONS
    ========================================== */
 
@@ -1903,6 +1938,16 @@ section {
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
+    }
+
+    .language-switcher {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .lang-link {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.6rem;
     }
 
     .nav-menu {
