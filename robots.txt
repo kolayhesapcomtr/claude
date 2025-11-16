@@ -1,0 +1,32 @@
+# robots.txt for Bulut Soğuk Hava Tesisi
+# https://bulutsogukhava.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://bulutsogukhava.com/sitemap.xml
+
+# Directories
+Allow: /tr/
+Allow: /en/
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Disallow specific files (if needed in future)
+# Disallow: /private/
+# Disallow: /temp/
+
+# Crawl-delay (optional, helps prevent server overload)
+# Crawl-delay: 1
+
+# For specific search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yandex
+Allow: /

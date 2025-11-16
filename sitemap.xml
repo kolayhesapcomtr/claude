@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- Turkish Pages -->
+    <url>
+        <loc>https://bulutsogukhava.com/tr/index.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bulutsogukhava.com/en/index.html"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://bulutsogukhava.com/tr/index.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://bulutsogukhava.com/en/index.html"/>
+        <lastmod>2024-11-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://bulutsogukhava.com/tr/services.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bulutsogukhava.com/en/services.html"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://bulutsogukhava.com/tr/services.html"/>
+        <lastmod>2024-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://bulutsogukhava.com/tr/products.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bulutsogukhava.com/en/products.html"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://bulutsogukhava.com/tr/products.html"/>
+        <lastmod>2024-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://bulutsogukhava.com/tr/about.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bulutsogukhava.com/en/about.html"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://bulutsogukhava.com/tr/about.html"/>
+        <lastmod>2024-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://bulutsogukhava.com/tr/gallery.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bulutsogukhava.com/en/gallery.html"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://bulutsogukhava.com/tr/gallery.html"/>
+        <lastmod>2024-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://bulutsogukhava.com/tr/contact.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bulutsogukhava.com/en/contact.html"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://bulutsogukhava.com/tr/contact.html"/>
+        <lastmod>2024-11-16</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- English Pages -->
+    <url>
+        <loc>https://bulutsogukhava.com/en/index.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bulutsogukhava.com/en/index.html"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://bulutsogukhava.com/tr/index.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://bulutsogukhava.com/en/index.html"/>
+        <lastmod>2024-11-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://bulutsogukhava.com/en/services.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bulutsogukhava.com/en/services.html"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://bulutsogukhava.com/tr/services.html"/>
+        <lastmod>2024-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://bulutsogukhava.com/en/products.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bulutsogukhava.com/en/products.html"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://bulutsogukhava.com/tr/products.html"/>
+        <lastmod>2024-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://bulutsogukhava.com/en/about.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bulutsogukhava.com/en/about.html"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://bulutsogukhava.com/tr/about.html"/>
+        <lastmod>2024-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://bulutsogukhava.com/en/gallery.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bulutsogukhava.com/en/gallery.html"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://bulutsogukhava.com/tr/gallery.html"/>
+        <lastmod>2024-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://bulutsogukhava.com/en/contact.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bulutsogukhava.com/en/contact.html"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://bulutsogukhava.com/tr/contact.html"/>
+        <lastmod>2024-11-16</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+</urlset>
