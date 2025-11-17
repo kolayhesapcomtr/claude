@@ -1977,6 +1977,50 @@ section {
     color: #856404;
 }
 
+.cookie-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: white;
+    box-shadow: var(--shadow-sm);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.cookie-table thead {
+    background: var(--gradient);
+    color: white;
+}
+
+.cookie-table th,
+.cookie-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.cookie-table th {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.cookie-table td {
+    font-size: 0.9rem;
+}
+
+.cookie-table tbody tr:hover {
+    background: var(--light-color);
+}
+
+.cookie-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    margin: 2rem 0;
+}
+
 /* ==========================================
    FOOTER
    ========================================== */
