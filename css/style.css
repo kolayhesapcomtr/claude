@@ -2029,6 +2029,7 @@ section {
         z-index: 999;
         border-radius: 20px;
         backdrop-filter: blur(10px);
+        gap: 0.2rem;
     }
 
     .nav-menu.active {
